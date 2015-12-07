@@ -1,0 +1,1 @@
+#include "\z\ace_artillery\addons\arty_m198_howitzer\script_component.hpp"

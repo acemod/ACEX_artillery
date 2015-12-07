@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACE">
+    <Package name="Arty_System">
+        <Key ID="STR_ACE_Arty_System_Name">
+            <English>ACE Artillery</English>
+            <German>ACE Artillerie</German>
+            <Spanish>ACE Artillería</Spanish>
+            <French>ACE Artillerie</French>
+            <Polish>ACE Artylerii</Polish>
+            <Czech>ACE Dělostřelectvo</Czech>
+            <Italian>ACE Artiglieria</Italian>
+            <Hungarian>ACE Tüzérség</Hungarian>
+            <Portuguese>ACE Artilharia</Portuguese>
+            <Russian>ACE Артиллерия</Russian>
+        </Key>
+    </Package>
+</Project>
