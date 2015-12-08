@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 #######################
-#  ACE3 Setup Script  #
+#  ACE3 Artillery Setup Script  #
 #######################
 
 import os
@@ -25,19 +25,19 @@ def main():
   ######################################
 
   This script will create your ACE3 dev environment for you.
-  
+
   Before you run this, you should already have:
     - The Arma 3 Tools installed properly via Steam
     - A properly set up P-drive
-  
+
   If you have not done those things yet, please abort this script in the next step and do so first.
-  
+
   This script will create two hard links on your system, both pointing to your ACE3 project folder:
     [Arma 3 installation directory]\\{} => ACE3 project folder
     P:\\{}                              => ACE3 project folder
-  
+
   It will also copy the required CBA includes to {}, if you do not have the CBA source code already.""".format(FULLDIR,FULLDIR,CBA))
-    print("\n") 
+    print("\n")
 
     try:
         reg = winreg.ConnectRegistry(None, winreg.HKEY_LOCAL_MACHINE)
@@ -55,8 +55,6 @@ def main():
     scriptpath = os.path.realpath(__file__)
     projectpath = os.path.dirname(os.path.dirname(scriptpath))
 
-    armapath = "G:\STEAM\steamapps\common\Arma 3"
-    
     print("# Detected Paths:")
     print("  Arma Path:    {}".format(armapath))
     print("  Project Path: {}".format(projectpath))
