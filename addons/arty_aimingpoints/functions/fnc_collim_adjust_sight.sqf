@@ -1,17 +1,13 @@
 /*
  * Author: p1nga
  *
- * Toggle The Light On Aiming Post.
+ * Toggle Aim Down Collimator Iron Sights.
  *
  * Argument:
  * 0: Any object <OBJECT>
-
- * The Current Light Status Is Determined From The AnimationPhase of 'light_mode'
- * 0 = Off, 1 = Green, 2 = Red
-
  *
  * Return Value:
- * Updated Status
+ * None
  *
  * Public: Yes
  */
