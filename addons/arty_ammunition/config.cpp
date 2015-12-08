@@ -11,6 +11,7 @@ class CfgPatches {
     };
 };
 
-#include "CfgEventhandlers.hpp"
-#include "CfgVehicles.hpp"
-#include "CfgAmmo.hpp"
+#include "config\CfgEventhandlers.hpp"
+#include "config\CfgVehicles.hpp"
+#include "config\CfgAmmo.hpp"
+#include "config\CfgMagazines.hpp"

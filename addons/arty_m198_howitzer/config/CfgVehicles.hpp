@@ -83,7 +83,7 @@ class CfgVehicles {
 				};
 				minelev = -16;
 				maxelev = +63;
-				magazines[] = {"32Rnd_155mm_Mo_shells"};
+				magazines[] = {"1Rnd_ACE_155mm_M982","1Rnd_ACE_155mm_M982","1Rnd_ACE_155mm_M982","1Rnd_ACE_155mm_M982","1Rnd_ACE_155mm_M982"};
 			};
 		};
 		

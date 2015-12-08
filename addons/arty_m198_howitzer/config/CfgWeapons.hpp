@@ -28,7 +28,7 @@ class CfgWeapons {
 		magazineReloadTime = 7;
 		autoReload = 0;
 		canLock = 0;
-		magazines[] = {"32Rnd_155mm_Mo_shells","6Rnd_155mm_Mo_smoke","2Rnd_155mm_Mo_guided","2Rnd_155mm_Mo_LG","6Rnd_155mm_Mo_mine","2Rnd_155mm_Mo_Cluster","6Rnd_155mm_Mo_AT_mine"};
+		magazines[] = {"1Rnd_ACE_155mm_M982"};
 		modes[] = {"Single1","Single2","Single3","Single4","Single5","Burst1","Burst2","Burst3","Burst4","Burst5"};
 		class GunParticles
 		{
