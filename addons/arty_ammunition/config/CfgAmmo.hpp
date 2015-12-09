@@ -1,43 +1,43 @@
 class CfgCloudlets
 {
 	class Default;
-	class ACE_ArtyTrail: Default
-	{
-		interval = "0.0003 * (speedSize interpolate [70,70.0001,-1,1])";
+	class ACE_ArtyTrail: Default {
+		interval = "0.1 - 0.097 * speedSize";
 		circleRadius = 0;
 		circleVelocity[] = {0,0,0};
-		particleShape = "\A3\data_f\ParticleEffects\Universal\Universal";
+		particleShape = "\A3\data_f\ParticleEffects\Universal\Refract";
 		particleFSNtieth = 16;
-		particleFSIndex = 12;
-		particleFSFrameCount = 16;
-		particleFSLoop = 0;
-		angleVar = 360;
-		ignoreWind = 1;
+		particleFSIndex = 7;
+		particleFSFrameCount = 48;
+		particleFSLoop = 1;
+		angleVar = 1;
 		animationName = "";
 		particleType = "Billboard";
 		timerPeriod = 1;
-		lifeTime = 0.25;
-		moveVelocity[] = {0,0,0};
+		lifeTime = 0.3;
+		MoveVelocityVar[] = {0,0,0};
 		rotationVelocity = 1;
-		weight = 1.274;
+		weight = 1.2;
 		volume = 1;
-		rubbing = 0.18;
-		size[] = {0.12,0.05,0.0.05,0};
+		rubbing = 0.1;
+		size[] = {0.25,0.5};
 		sizeCoef = 1;
-		color[] = {{1,1,1,0.02},{1,1,1,0.04},{1,1,1,0.02},{1,1,1,0}};
-		colorCoef[] = {1,1,1,"(speedSize interpolate [38,85,0,1]) * ((distToSurface*distToSurface) interpolate [400,40000,1.2,0.5])"};
-		animationSpeed[] = {1000};
-		animationSpeedCoef = 0.01;
-		randomDirectionPeriod = 0;
-		randomDirectionIntensity = 0;
+		color[] = {{0.06,0.06,0.06,0.26},{0.3,0.3,0.3,0.18},{0.3,0.3,0.3,0.02}};
+		colorCoef[] = {1,1,1,1};
+		animationSpeed[] = {2,1};
+		animationSpeedCoef = 1;
+		randomDirectionPeriod = 0.1;
+		randomDirectionIntensity = 0.05;
 		onTimerScript = "";
 		beforeDestroyScript = "";
-		lifeTimeVar = 0.2;
-		position[] = {"0","0","-0.40"};
+		blockAIVisibility = 0;
+		destroyOnWaterSurface = 1;
+		destroyOnWaterSurfaceOffset = -0.1;
+		lifeTimeVar = 0;
+		position[] = {"0","0","0"};
 		positionVar[] = {0,0,0};
-		MoveVelocityVar[] = {0,0,0};
-		rotationVelocityVar = 0;
-		sizeVar = 0;
+		rotationVelocityVar = 20;
+		sizeVar = 0.05;
 		colorVar[] = {0,0,0,0};
 		randomDirectionPeriodVar = 0;
 		randomDirectionIntensityVar = 0;
