@@ -6,16 +6,26 @@ class CfgVehicles {
 	class LandVehicle;
 	class MRAP_03_hmg_base_F;
 	
-	// class ACE_MACS_Sleeve_F: ThingX {   
-		// scope = 2;
-        // scopeCurator = 2;
-		// displayName = "MACS Charge Loading Sleeve";
-		// author = ECSTRING(common,ACETeam);
-		// model=PATHTOF(macs_charge_sleeve_F.p3d);
-		// icon="";
-		// picture="";
-		// vehicleClass = "Static";
-	// };
+	class ACE_MACS_M231_Sleeve_F: ThingX {   
+		scope = 2;
+        scopeCurator = 2;
+		displayName = "MACS M231 Charge Sleeve";
+		author = ECSTRING(common,ACETeam);
+		model=PATHTOF(macs_sleeve_m231_F.p3d);
+		icon="";
+		picture="";
+		vehicleClass = "ACE_Arty_System";
+	};
+	class ACE_MACS_M232_Sleeve_F: ThingX {   
+		scope = 2;
+        scopeCurator = 2;
+		displayName = "MACS M232 Charge Sleeve";
+		author = ECSTRING(common,ACETeam);
+		model=PATHTOF(macs_sleeve_m232_F.p3d);
+		icon="";
+		picture="";
+		vehicleClass = "ACE_Arty_System";
+	};
 	class ACE_MACS_M231_Pallet_F: MRAP_03_hmg_base_F {   
 		scope = 2;
         scopeCurator = 2;
