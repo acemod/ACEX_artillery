@@ -7,7 +7,7 @@ class CfgMagazines {
 		scope = 2;
 		displayName = "M982 Excalibur";
 		ammo = "ACE_155mm_M982";
-		count = 1;
+		count = 3;
 		nameSound = "heat";
 	};
 };

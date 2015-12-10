@@ -26,7 +26,7 @@ class CfgWeapons {
 		maxRangeProbab = 0.1;
 		reloadTime = 6;
 		magazineReloadTime = 7;
-		autoReload = 0;
+		autoReload = 1;
 		canLock = 0;
 		magazines[] = {"1Rnd_ACE_155mm_M982"};
 		modes[] = {"Single1","Single2","Single3","Single4","Single5","Burst1","Burst2","Burst3","Burst4","Burst5"};
