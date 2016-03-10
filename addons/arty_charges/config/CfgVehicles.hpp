@@ -14,8 +14,11 @@ class CfgVehicles {
 		model=PATHTOF(macs_charge_m231_F.p3d);
 		icon="iconObject_1x1";
 		picture="\A3\Weapons_F\Data\placeholder_co.paa";
-		vehicleClass = "ACE_Arty_System";
 
+		vehicleClass = "ACE_Arty_System";
+		editorCategory = "EdCat_ACE_Arty_System";
+		editorSubcategory = "EdSubcat_ACE_Arty_Ammunition";
+		
 		class AnimationSources {
 			class charge_base{
 				initPhase = 1;
@@ -39,7 +42,10 @@ class CfgVehicles {
 		model=PATHTOF(macs_charge_m232_F.p3d);
 		icon="iconObject_1x1";
 		picture="\A3\Weapons_F\Data\placeholder_co.paa";
+		
 		vehicleClass = "ACE_Arty_System";
+		editorCategory = "EdCat_ACE_Arty_System";
+		editorSubcategory = "EdSubcat_ACE_Arty_Ammunition";
 
 		class AnimationSources {
 			class charge_base{
@@ -65,7 +71,10 @@ class CfgVehicles {
 		model=PATHTOF(macs_sleeve_m231_F.p3d);
 		icon="";
 		picture="";
+		
 		vehicleClass = "ACE_Arty_System";
+		editorCategory = "EdCat_ACE_Arty_System";
+		editorSubcategory = "EdSubcat_ACE_Arty_Ammunition";
 	};
 	class ACE_MACS_M232_Sleeve_F: ThingX {
 		scope = 2;
@@ -75,16 +84,23 @@ class CfgVehicles {
 		model=PATHTOF(macs_sleeve_m232_F.p3d);
 		icon="";
 		picture="";
+		
 		vehicleClass = "ACE_Arty_System";
+		editorCategory = "EdCat_ACE_Arty_System";
+		editorSubcategory = "EdSubcat_ACE_Arty_Ammunition";
 	};
-	class ACE_MACS_M231_Pallet_F: MRAP_03_hmg_base_F {
+	class ACE_MACS_M231_Pallet_F: ThingX {
 		XEH_ENABLED;
 		scope = 2;
         scopeCurator = 2;
 		displayName = "MACS M231 Supply Pallet";
 		author = ECSTRING(common,ACETeam);
 		model=PATHTOF(macs_pallet_m231_F.p3d);
-
+		
+		vehicleClass = "ACE_Arty_System";
+		editorCategory = "EdCat_ACE_Arty_System";
+		editorSubcategory = "EdSubcat_ACE_Arty_Ammunition";
+		
 		slingLoadCargoMemoryPoints[] = {"slingload_point_01","slingload_point_02","slingload_point_03","slingload_point_04"};
 		
 		class AnimationSources {
@@ -142,6 +158,9 @@ class CfgVehicles {
 		model=PATHTOF(macs_pallet_m232_F.p3d);
 		icon="";
 		picture="";
-		vehicleClass = "Static";
+		
+		vehicleClass = "ACE_Arty_System";
+		editorCategory = "EdCat_ACE_Arty_System";
+		editorSubcategory = "EdSubcat_ACE_Arty_Ammunition";
 	};
 };
