@@ -14,7 +14,10 @@ class CfgVehicles {
 		displayName = "FAPP Pallet (Metal)";
 		author = ECSTRING(common,ACETeam);
 		model=PATHTOF(FAPP_Metal_F.p3d);
+		
 		vehicleClass = "ACE_Arty_System";
+		editorCategory = "EdCat_ACE_Arty_System";
+		editorSubcategory = "EdSubcat_ACE_Arty_Equipment";
 	};
 	
 	class ACE_Wood_Pallet_Small_F: ThingX {
@@ -28,7 +31,10 @@ class CfgVehicles {
 		displayName = "Wooden Pallet (Small)";
 		author = ECSTRING(common,ACETeam);
 		model=PATHTOF(Wood_Pallet_Small_F.p3d);
+		
 		vehicleClass = "ACE_Arty_System";
+		editorCategory = "EdCat_ACE_Arty_System";
+		editorSubcategory = "EdSubcat_ACE_Arty_Equipment";
 	};
 	class ACE_Wood_Pallet_Large_F: ThingX {
 		XEH_ENABLED;
@@ -41,7 +47,10 @@ class CfgVehicles {
 		displayName = "Wooden Pallet (Large)";
 		author = ECSTRING(common,ACETeam);
 		model=PATHTOF(Wood_Pallet_Large_F.p3d);
+		
 		vehicleClass = "ACE_Arty_System";
+		editorCategory = "EdCat_ACE_Arty_System";
+		editorSubcategory = "EdSubcat_ACE_Arty_Equipment";
 	};
 	
 	class ACE_155_M982_Pallet_F: ThingX {
@@ -59,7 +68,10 @@ class CfgVehicles {
 		model=PATHTOF(M982_Pallet_F.p3d);
 		icon=PATHTOF(m198_howitzer\data\ui\map_pushrod_ca.paa);
 		picture=PATHTOF(m198_howitzer\data\ui\pushrod_equip_ca.paa);
+		
 		vehicleClass = "ACE_Arty_System";
+		editorCategory = "EdCat_ACE_Arty_System";
+		editorSubcategory = "EdSubcat_ACE_Arty_Ammunition";
 		
 		slingLoadCargoMemoryPoints[] = {"slingload_point_01","slingload_point_02","slingload_point_03","slingload_point_04"};		
 		
@@ -127,7 +139,11 @@ class CfgVehicles {
 		
 		scope = 1;
 		scopeCurator = 1;
+		
 		vehicleClass = "ACE_Arty_System";
+		editorCategory = "EdCat_ACE_Arty_System";
+		editorSubcategory = "EdSubcat_ACE_Arty_Ammunition";
+		
 		
 		class AnimationSources
 		{
