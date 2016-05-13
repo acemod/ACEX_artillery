@@ -4,7 +4,7 @@
 
 <p align="center">
     <a href="https://github.com/acemod/ACEX_artillery/releases/latest">
-        <img src="https://img.shields.io/badge/Version-0.0.1-blue.svg?style=flat-square" alt="ACEX Artillery Version">
+        <img src="https://img.shields.io/badge/Version-1.0.0-blue.svg?style=flat-square" alt="ACEX Artillery Version">
     </a>
     <a href="https://github.com/acemod/ACEX_artillery/issues">
         <img src="https://img.shields.io/github/issues-raw/acemod/ACEX_artillery.svg?style=flat-square&label=Issues" alt="ACEX Artillery Issues">

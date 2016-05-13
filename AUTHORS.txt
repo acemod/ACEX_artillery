@@ -1,0 +1,30 @@
+﻿# ACE3 CONTRIBUTOR LIST
+# If you contributed, but are not listed here, contact me:
+# koffeinflummi@gmail.com
+#
+# Feel free to add yourself to this when creating a pull
+# request, preferably including an email address.
+
+# CORE TEAM
+bux578 <github@jonathandavid.de>
+commy2
+esteldunedain <nicolas.d.badano@gmail.com>
+Felix Wiegand <koffeinflummi@gmail.com>
+Garth "L-H" de Wet <garthofhearts@gmail.com>
+Giallustio
+Glowbal
+Gundy
+Janus
+jokoho482 <jokoho482@gmail.com>
+Jonpas <jonpas33@gmail.com>
+Kieran
+NouberNou
+PabstMirror <pabstmirror@gmail.com>
+Ruthberg <ulteq@web.de>
+SilentSpike <SilentSpike100@gmail.com>
+tpM
+ViperMaul
+VKing <kauestad@gmail.com>
+Walter Pearce <jaynus@gmail.com>
+P1nga
+Zumorc
