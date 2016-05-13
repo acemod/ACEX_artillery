@@ -1,6 +1,6 @@
 class StageTI
 {
-	texture="a3\data_f\default_hot_ti_ca.paa";
+    texture="a3\data_f\default_hot_ti_ca.paa";
 };
 ambient[]={0,0,0,0.090000004};
 diffuse[]={0,0,0,1};
@@ -10,9 +10,9 @@ specular[]={0,0,0,0};
 specularPower=0;
 renderFlags[]=
 {
-	"NoZWrite",
-	"NoAlphaWrite",
-	"AddBlend"
+    "NoZWrite",
+    "NoAlphaWrite",
+    "AddBlend"
 };
 PixelShaderID="Normal";
 VertexShaderID="BasicFade";

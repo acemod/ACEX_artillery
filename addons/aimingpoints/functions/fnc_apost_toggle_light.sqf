@@ -23,16 +23,16 @@ diag_log _object;
 _lightStatus = _object animationPhase "light_mode";
 
 switch (_lightStatus) do {
-	case 0: {
-		_object animate ["light_mode",1];
-	};
-	case 1: {
-		_object animate ["light_mode",2];
-	};
-	case 2: {
-		_object animate ["light_mode",0];
-	};
-	default {
-		hint "Something Went Wrong With AimingPost";
-	};
+    case 0: {
+        _object animate ["light_mode",1];
+    };
+    case 1: {
+        _object animate ["light_mode",2];
+    };
+    case 2: {
+        _object animate ["light_mode",0];
+    };
+    default {
+        hint "Something Went Wrong With AimingPost";
+    };
 };

@@ -13,7 +13,7 @@
             <Portuguese>Aiming-Post</Portuguese>
             <Russian>Aiming-Post</Russian>
         </Key>
-		<Key ID="STR_Acex_Artillery_Aimingpoints_Aimingpost_Item">
+        <Key ID="STR_Acex_Artillery_Aimingpoints_Aimingpost_Item">
             <English>Aiming-Post Bag</English>
             <German>Aiming-Post Bag</German>
             <Spanish>Aiming-Post Bag</Spanish>
@@ -25,7 +25,7 @@
             <Portuguese>Aiming-Post Bag</Portuguese>
             <Russian>Aiming-Post Bag</Russian>
         </Key>
-		<Key ID="STR_Acex_Artillery_Aimingpoints_Collimator_Name">
+        <Key ID="STR_Acex_Artillery_Aimingpoints_Collimator_Name">
             <English>Infinity Aiming Collimator</English>
             <German>Infinity Aiming Collimator</German>
             <Spanish>Infinity Aiming Collimator</Spanish>
@@ -37,7 +37,7 @@
             <Portuguese>Infinity Aiming Collimator</Portuguese>
             <Russian>Infinity Aiming Collimator</Russian>
         </Key>
-		<Key ID="STR_Acex_Artillery_Aimingpoints_Collimator_Item">
+        <Key ID="STR_Acex_Artillery_Aimingpoints_Collimator_Item">
             <English>Infinity Aiming Collimator Case</English>
             <German>Infinity Aiming Collimator Case</German>
             <Spanish>Infinity Aiming Collimator Case</Spanish>
@@ -49,6 +49,6 @@
             <Portuguese>Infinity Aiming Collimator Case</Portuguese>
             <Russian>Infinity Aiming Collimator Case</Russian>
         </Key>
-		
+        
     </Package>
 </Project>

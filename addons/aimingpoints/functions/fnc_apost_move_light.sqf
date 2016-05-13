@@ -21,7 +21,7 @@ diag_log _object;
 _lightPos = _object animationPhase "move_post_light";
 
 if (_lightPos == 0) then {
-	_object animate ["move_post_light",1];
+    _object animate ["move_post_light",1];
 } else {
-	_object animate ["move_post_light",0];
+    _object animate ["move_post_light",0];
 };

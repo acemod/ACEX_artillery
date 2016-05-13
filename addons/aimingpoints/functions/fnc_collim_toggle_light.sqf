@@ -22,7 +22,7 @@ diag_log _object;
 _lightStatus = _object animationPhase "collimator_illuminate";
 
 if (_lightStatus == 0) then {
-	_object animate ["collimator_illuminate", 1];
+    _object animate ["collimator_illuminate", 1];
 }else{
-	_object animate ["collimator_illuminate", 0];
+    _object animate ["collimator_illuminate", 0];
 };
