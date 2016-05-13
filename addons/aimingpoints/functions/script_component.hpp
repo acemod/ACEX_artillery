@@ -1,1 +1,1 @@
-#include "\z\ace_artillery\addons\arty_aimingpoints\script_component.hpp"
+#include "\z\acex_artillery\addons\aimingpoints\script_component.hpp"

@@ -12,7 +12,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-    texture="z\ace_artillery\addons\arty_charges\data\modular_charges_nohq.paa";
+    texture="z\acex_artillery\addons\charges\data\modular_charges_nohq.paa";
     uvSource="tex";
     class uvTransform
     {
@@ -48,7 +48,7 @@ class Stage3
 };
 class Stage4
 {
-    texture="z\ace_artillery\addons\arty_charges\data\modular_charges_as.paa";
+    texture="z\acex_artillery\addons\charges\data\modular_charges_as.paa";
     uvSource="tex";
     class uvTransform
     {
@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-    texture="z\ace_artillery\addons\arty_charges\data\modular_charges_smdi.paa";
+    texture="z\acex_artillery\addons\charges\data\modular_charges_smdi.paa";
     uvSource="tex";
     class uvTransform
     {

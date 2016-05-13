@@ -1,1 +1,1 @@
-#include "\z\ace_artillery\addons\arty_m198_howitzer\script_component.hpp"
+#include "\z\acex_artillery\addons\m198_howitzer\script_component.hpp"

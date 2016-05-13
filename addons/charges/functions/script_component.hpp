@@ -1,1 +1,1 @@
-#include "\z\ace_artillery\addons\arty_charges\script_component.hpp"
+#include "\z\acex_artillery\addons\charges\script_component.hpp"

@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-    texture="z\ace_artillery\addons\arty_aimingpoints\data\glass_nohq.paa";
+    texture="z\acex_artillery\addons\aimingpoints\data\glass_nohq.paa";
     uvSource="tex";
     class uvTransform
     {
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-    texture="z\ace_artillery\addons\arty_aimingpoints\data\glass_smdi.paa";
+    texture="z\acex_artillery\addons\aimingpoints\data\glass_smdi.paa";
     uvSource="tex";
     class uvTransform
     {
