@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACEX_Artillery">
+    <Package name="Aimingpoints">
+        <Key ID="STR_Acex_Artillery_Aimingpoints_Aimingpost_Name">
+            <English>Aiming-Post</English>
+            <German>Aiming-Post</German>
+            <Spanish>Aiming-Post</Spanish>
+            <French>Aiming-Post</French>
+            <Polish>Aiming-Post</Polish>
+            <Czech>Aiming-Post</Czech>
+            <Italian>Aiming-Post</Italian>
+            <Hungarian>Aiming-Post</Hungarian>
+            <Portuguese>Aiming-Post</Portuguese>
+            <Russian>Aiming-Post</Russian>
+        </Key>
+		<Key ID="STR_Acex_Artillery_Aimingpoints_Aimingpost_Item">
+            <English>Aiming-Post Bag</English>
+            <German>Aiming-Post Bag</German>
+            <Spanish>Aiming-Post Bag</Spanish>
+            <French>Aiming-Post Bag</French>
+            <Polish>Aiming-Post Bag</Polish>
+            <Czech>Aiming-Post Bag</Czech>
+            <Italian>Aiming-Post Bag</Italian>
+            <Hungarian>Aiming-Post Bag</Hungarian>
+            <Portuguese>Aiming-Post Bag</Portuguese>
+            <Russian>Aiming-Post Bag</Russian>
+        </Key>
+		<Key ID="STR_Acex_Artillery_Aimingpoints_Collimator_Name">
+            <English>Infinity Aiming Collimator</English>
+            <German>Infinity Aiming Collimator</German>
+            <Spanish>Infinity Aiming Collimator</Spanish>
+            <French>Infinity Aiming Collimator</French>
+            <Polish>Infinity Aiming Collimator</Polish>
+            <Czech>Infinity Aiming Collimator</Czech>
+            <Italian>Infinity Aiming Collimator</Italian>
+            <Hungarian>Infinity Aiming Collimator</Hungarian>
+            <Portuguese>Infinity Aiming Collimator</Portuguese>
+            <Russian>Infinity Aiming Collimator</Russian>
+        </Key>
+		<Key ID="STR_Acex_Artillery_Aimingpoints_Collimator_Item">
+            <English>Infinity Aiming Collimator Case</English>
+            <German>Infinity Aiming Collimator Case</German>
+            <Spanish>Infinity Aiming Collimator Case</Spanish>
+            <French>Infinity Aiming Collimator Case</French>
+            <Polish>Infinity Aiming Collimator Case</Polish>
+            <Czech>Infinity Aiming Collimator Case</Czech>
+            <Italian>Infinity Aiming Collimator Case</Italian>
+            <Hungarian>Infinity Aiming Collimator Case</Hungarian>
+            <Portuguese>Infinity Aiming Collimator Case</Portuguese>
+            <Russian>Infinity Aiming Collimator Case</Russian>
+        </Key>
+		
+    </Package>
+</Project>

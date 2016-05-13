@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACEX_Artillery">
+    <Package name="System">
+        <Key ID="STR_Acex_Artillery_System_Name">
+            <English>ACEX Artillery</English>
+            <German>ACEX Artillerie</German>
+            <Spanish>ACEX Artillería</Spanish>
+            <French>ACEX Artillerie</French>
+            <Polish>ACEX Artylerii</Polish>
+            <Czech>ACEX Dělostřelectvo</Czech>
+            <Italian>ACEX Artiglieria</Italian>
+            <Hungarian>ACEX Tüzérség</Hungarian>
+            <Portuguese>ACEX Artilharia</Portuguese>
+            <Russian>ACEX Артиллерия</Russian>
+        </Key>
+    </Package>
+</Project>
