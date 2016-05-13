@@ -1,12 +1,12 @@
-name = "Advanced Combat Environment 3 - Project Template";
+name = "Advanced Combat Environment 3 - Artillery Components";
 picture = "logo_acex_artillery_ca.paa";
 actionName = "GitHub";
 action = "https://github.com/acemod/arma-project-template";
-description = "Project Template";
+description = "Artillery Components";
 logo = "logo_acex_artillery_ca.paa";
 logoOver = "logo_acex_artillery_ca.paa";
-tooltip = "ACE3 Project Template";
-tooltipOwned = "ACE3 Project Template Owned";
-overview = "Advanced Combat Environment 3 Project Template";
+tooltip = "ACE3 Artillery Components";
+tooltipOwned = "ACE3 Artillery Components Owned";
+overview = "Advanced Combat Environment 3 Artillery Components";
 author = "ACE3 Team";
 overviewPicture = "logo_ace3_ca.paa";
