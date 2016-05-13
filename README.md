@@ -12,9 +12,6 @@
     <a href="https://github.com/acemod/ACEX_artillery/releases">
         <img src="https://img.shields.io/github/downloads/acemod/ACEX_artillery/total.svg?style=flat-square&label=Downloads" alt="ACEX Artillery Downloads">
     </a>
-    <a href="https://forums.bistudio.com/topic/181341-ace3-a-collaborative-merger-between-agm-cse-and-ace/?p=2859670">
-        <img src="https://img.shields.io/badge/BIF-Thread-lightgrey.svg?style=flat-square" alt="BIF Thread">
-    </a>
     <a href="https://github.com/acemod/ACEX_artillery/blob/master/LICENSE">
         <img src="https://img.shields.io/badge/License-GPLv2-red.svg?style=flat-square" alt="ACEX Artillery License">
     </a>
