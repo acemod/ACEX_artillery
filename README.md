@@ -45,8 +45,8 @@ The project is entirely open-source and all contributions are welcome. Feel free
 
 If you installed ACEX Artillery but have trouble understanding how it all works, or where to start, read this first:
 
-- [Installation guide](http://acemod.com/wiki)
-- [Information center](http://acemod.com/wiki)
+- [Installation guide](http://ace3mod.com/wiki/user/installation-guide.html)
+- [Information center](http://ace3mod.com/wiki/user/information-center.html)
 
 ### Contributing
 
