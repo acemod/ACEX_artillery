@@ -13,7 +13,7 @@ class CfgVehicles {
         };
     };
     class StaticMortar: StaticWeapon
-    {    
+    {
         class Turrets: Turrets
         {
             class MainTurret: MainTurret
@@ -23,31 +23,31 @@ class CfgVehicles {
         };
     };
     class StaticHowitzer: StaticMortar{};
-    
+
     class ACE_M198_F: StaticHowitzer
     {
         scope = 2;
         displayName = "M198 Howitzer";
-        model=PATHTOF(M198_Howitzer_F.p3d);      
+        model=PATHTOF(M198_Howitzer_F.p3d);
 
         slingLoadCargoMemoryPoints[] = {"slingload_point_01","slingload_point_02","slingload_point_03","slingload_point_04"};
-        
+
         class Turrets: Turrets
         {
             class MainTurret: MainTurret
             {
                 animationSourceBody = "";
                 animationSourceGun = "";
-                
+
                 body = "main_turret";
                 gun = "main_gun";
-                
+
                 gunBeg = "usti hlavne";        //front
                 gunEnd = "konec hlavne";    //back
-                
+
                 turretAxis = "turret_axis";
                 gunAxis = "elevation_axis";
-                
+
                 gunnerAction = "Mortar_Gunner";
                 gunnergetInAction = "";
                 gunnergetOutAction = "";
@@ -86,7 +86,7 @@ class CfgVehicles {
                 magazines[] = {"1Rnd_ACE_155mm_M982","1Rnd_ACE_155mm_M982","1Rnd_ACE_155mm_M982","1Rnd_ACE_155mm_M982","1Rnd_ACE_155mm_M982"};
             };
         };
-        
+
         class AnimationSources {
             class open_breach {
                 source="user";
@@ -170,12 +170,12 @@ class CfgVehicles {
                 maxValue=1;
             };
             class move_left_foot {
-                source="left_foot_translate";
+                source="user";
                 animPeriod=0;
                 initPhase=0;
                 minValue=0;
                 maxValue=1;
-            };    
+            };
             class right_foot_translate {
                 animPeriod=0;
                 initPhase=0;
@@ -183,13 +183,13 @@ class CfgVehicles {
                 maxValue=1;
             };
             class move_right_foot {
-                source="right_foot_translate";
+                source="user";
                 animPeriod=0;
                 initPhase=0;
                 minValue=0;
                 maxValue=1;
-            };            
-            
+            };
+
             class hide_jack_handle_left {
                 source="user";
                 animPeriod=1;
@@ -210,7 +210,7 @@ class CfgVehicles {
                 animPeriod=2.5;
                 initPhase=1;
             };
-            
+
             class elevation{
                 animPeriod=0;
                 initPhase=0;
@@ -218,7 +218,7 @@ class CfgVehicles {
                 maxValue=1.09956;
             };
             class main_gun {
-                source="elevation";
+                source="user";
                 animPeriod=0;
                 initPhase=0;
                 minValue=-0.279253;
@@ -231,13 +231,13 @@ class CfgVehicles {
                 maxValue=0.785398;
             };
             class main_turret {
-                source="traverse";
+                source="user";
                 animPeriod=0;
                 initPhase=0;
                 minValue=-0.785398;
                 maxValue=0.785398;
             };
-            
+
             class muzzle_hide_arty {
                 source = "reload";
                 weapon = "ACE_155_Howitzer_M198";
@@ -363,12 +363,12 @@ class CfgVehicles {
     class ACE_M198_Des_F: ACE_M198_F {
         displayName = "M198 Desert";
         hiddenSelections[] = {"camo1","camo2","camo3"};
-        hiddenSelectionsTextures[] = {"\z\ace\addons\artillery\m198_howitzer\data\camo1_d_co.paa","\z\ace\addons\artillery\m198_howitzer\data\camo2_d_co.paa","\z\ace\addons\artillery\m198_howitzer\data\camo3_d_co.paa"};
+        hiddenSelectionsTextures[] = {"\z\acex_artillery\addons\m198_howitzer\data\camo1_d_co.paa","\z\acex_artillery\addons\m198_howitzer\data\camo2_d_co.paa","\z\acex_artillery\addons\m198_howitzer\data\camo3_d_co.paa"};
     };
     class ACE_M198_Foot_F: ACE_RepairItem_Base {
         scope = 2;
         displayName = "M198 Howitzer Foot";
-        model=PATHTOF(m198_howitzer\M198_Foot_F.p3d);  
+        model=PATHTOF(M198_Foot_F.p3d);
         vehicleClass = "Static";
 
         EGVAR(dragging,canDrag) = 1;
@@ -378,38 +378,38 @@ class CfgVehicles {
     class ACE_M198_Baseplate_F: ThingX {
         scope = 2;
         displayName = "M198 Howitzer Baseplate";
-        model=PATHTOF(m198_howitzer\M198_Baseplate_F.p3d); 
-        vehicleClass = "Static";        
+        model=PATHTOF(M198_Baseplate_F.p3d);
+        vehicleClass = "Static";
     };
-    
-    class ACE_M198_Jack_Handle_F: ThingX {   
+
+    class ACE_M198_Jack_Handle_F: ThingX {
         scope = 2;
         scopeCurator = 2;
         displayName = "M198 Howitzer Jack Handle";
         author = ECSTRING(common,ACETeam);
-        model=PATHTOF(m198_howitzer\M198_Jack_Handle_F.p3d);
-        icon=PATHTOF(m198_howitzer\data\ui\map_loadingtray_ca.paa);
-        picture=PATHTOF(m198_howitzer\data\ui\loadingtray_equip_ca.paa);
+        model=PATHTOF(M198_Jack_Handle_F.p3d);
+        icon=PATHTOF(data\ui\map_loadingtray_ca.paa);
+        picture=PATHTOF(data\ui\loadingtray_equip_ca.paa);
         vehicleClass = "Static";
     };
-    class ACE_155_LoadingTray_F: ThingX {   
+    class ACE_155_LoadingTray_F: ThingX {
         scope = 2;
         scopeCurator = 2;
         displayName = "Loading Tray (155mm Howitzer)";
         author = ECSTRING(common,ACETeam);
-        model=PATHTOF(m198_howitzer\Loading_Tray_F.p3d);
-        icon=PATHTOF(m198_howitzer\data\ui\map_loadingtray_ca.paa);
-        picture=PATHTOF(m198_howitzer\data\ui\loadingtray_equip_ca.paa);
+        model=PATHTOF(M198_Loading_Tray_F.p3d);
+        icon=PATHTOF(data\ui\map_loadingtray_ca.paa);
+        picture=PATHTOF(data\ui\loadingtray_equip_ca.paa);
         vehicleClass = "Static";
     };
-    class ACE_155_PushRod_F: ThingX {   
+    class ACE_155_PushRod_F: ThingX {
         scope = 2;
         scopeCurator = 2;
         displayName = "Loading Push-rod (155mm Howitzer)";
         author = ECSTRING(common,ACETeam);
-        model=PATHTOF(m198_howitzer\Push_Rod_F.p3d);
-        icon=PATHTOF(m198_howitzer\data\ui\map_pushrod_ca.paa);
-        picture=PATHTOF(m198_howitzer\data\ui\pushrod_equip_ca.paa);
+        model=PATHTOF(M198_Push_Rod_F.p3d);
+        icon=PATHTOF(data\ui\map_pushrod_ca.paa);
+        picture=PATHTOF(data\ui\pushrod_equip_ca.paa);
         vehicleClass = "Static";
-    };    
+    };
 };

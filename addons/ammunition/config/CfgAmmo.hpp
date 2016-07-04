@@ -61,5 +61,5 @@ class CfgAmmo {
         cost = 3000;
         model = PATHTOF(M982_Excalibur_Fly.p3d);
         effectFly = "Arty_Trails";
-    } ;
+    };
 };
