@@ -14,6 +14,8 @@ class CfgVehicles {
         displayName = "FAPP Pallet (Metal)";
         author = ECSTRING(common,ACETeam);
         model=PATHTOF(FAPP_Metal_F.p3d);
+        icon = "iconObject_1x1";
+        picture = "\A3\Weapons_F\Data\placeholder_co.paa";
 
         vehicleClass = "acex_artillery_System";
         editorCategory = "EdCat_acex_artillery_System";
@@ -30,7 +32,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Wooden Pallet (Small)";
         author = ECSTRING(common,ACETeam);
-        model=PATHTOF(Wood_Pallet_Small_F.p3d);
+        model = PATHTOF(Wood_Pallet_Small_F.p3d);
 
         vehicleClass = "acex_artillery_System";
         editorCategory = "EdCat_acex_artillery_System";
@@ -47,6 +49,8 @@ class CfgVehicles {
         displayName = "Wooden Pallet (Large)";
         author = ECSTRING(common,ACETeam);
         model=PATHTOF(Wood_Pallet_Large_F.p3d);
+        icon = "iconObject_1x1";
+        picture = "\A3\Weapons_F\Data\placeholder_co.paa";
 
         vehicleClass = "acex_artillery_System";
         editorCategory = "EdCat_acex_artillery_System";
@@ -65,9 +69,9 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M982 Excalibur Pallet";
         author = ECSTRING(common,ACETeam);
-        model=PATHTOF(M982_Pallet_F.p3d);
-        icon=PATHTOF(m198_howitzer\data\ui\map_pushrod_ca.paa);
-        picture=PATHTOF(m198_howitzer\data\ui\pushrod_equip_ca.paa);
+        model = PATHTOF(M982_Pallet_F.p3d);
+        icon = "iconObject_1x1";
+        picture = "\A3\Weapons_F\Data\placeholder_co.paa";
 
         vehicleClass = "acex_artillery_System";
         editorCategory = "EdCat_acex_artillery_System";
@@ -75,8 +79,7 @@ class CfgVehicles {
 
         slingLoadCargoMemoryPoints[] = {"slingload_point_01","slingload_point_02","slingload_point_03","slingload_point_04"};
 
-        class AnimationSources
-        {
+        class AnimationSources {
             class hide_packaging {
                 source="user";
                 animPeriod = 1;
@@ -208,9 +211,9 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M107 HE";
         author = ECSTRING(common,ACETeam);
-        model=PATHTOF(M107_HE_F.p3d);
-        icon=PATHTOF(m198_howitzer\data\ui\map_pushrod_ca.paa);
-        picture=PATHTOF(m198_howitzer\data\ui\pushrod_equip_ca.paa);
+        model = PATHTOF(M107_HE_F.p3d);
+        icon = "iconObject_1x1";
+        picture = "\A3\Weapons_F\Data\placeholder_co.paa";
     };
     class ACE_155_M483_F: ACE_155_BASE_F {
         scope = 2;
@@ -218,8 +221,8 @@ class CfgVehicles {
         displayName = "M483 DPICM";
         author = ECSTRING(common,ACETeam);
         model=PATHTOF(M483_DPICM_F.p3d);
-        icon=PATHTOF(m198_howitzer\data\ui\map_pushrod_ca.paa);
-        picture=PATHTOF(m198_howitzer\data\ui\pushrod_equip_ca.paa);
+        icon = "iconObject_1x1";
+        picture = "\A3\Weapons_F\Data\placeholder_co.paa";
     };
 
     class ACE_155_M982_F: ThingX {
@@ -236,9 +239,9 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M982 Excalibur";
         author = ECSTRING(common,ACETeam);
-        model=PATHTOF(M982_Excalibur_F.p3d);
-        icon=PATHTOF(m198_howitzer\data\ui\map_pushrod_ca.paa);
-        picture=PATHTOF(m198_howitzer\data\ui\pushrod_equip_ca.paa);
+        model = PATHTOF(M982_Excalibur_F.p3d);
+        icon = "iconObject_1x1";
+        picture = "\A3\Weapons_F\Data\placeholder_co.paa";
         vehicleClass = "acex_artillery_System";
 
         class AnimationSources

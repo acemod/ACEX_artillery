@@ -18,7 +18,7 @@ class CfgVehicles {
         vehicleClass = "acex_artillery_System";
         editorCategory = "EdCat_acex_artillery_System";
         editorSubcategory = "EdSubcat_acex_artillery_Ammunition";
-        
+
         class AnimationSources {
             class charge_base{
                 initPhase = 1;
@@ -26,7 +26,7 @@ class CfgVehicles {
                 maxValue = 4;
             };
             class charge_size {
-                source = "charge_base";
+                source = "user";
                 animPeriod = 0;
                 initPhase = 1;
                 minValue = 1;
@@ -42,7 +42,7 @@ class CfgVehicles {
         model=PATHTOF(macs_charge_m232_F.p3d);
         icon="iconObject_1x1";
         picture="\A3\Weapons_F\Data\placeholder_co.paa";
-        
+
         vehicleClass = "acex_artillery_System";
         editorCategory = "EdCat_acex_artillery_System";
         editorSubcategory = "EdSubcat_acex_artillery_Ammunition";
@@ -54,7 +54,7 @@ class CfgVehicles {
                 maxValue = 5;
             };
             class charge_size {
-                source = "charge_base";
+                source = "user";
                 animPeriod = 0;
                 initPhase = 1;
                 minValue = 1;
@@ -69,9 +69,9 @@ class CfgVehicles {
         displayName = "MACS M231 Charge Sleeve";
         author = ECSTRING(common,ACETeam);
         model=PATHTOF(macs_sleeve_m231_F.p3d);
-        icon="";
-        picture="";
-        
+        icon = "iconObject_1x1";
+        picture = "\A3\Weapons_F\Data\placeholder_co.paa";
+
         vehicleClass = "acex_artillery_System";
         editorCategory = "EdCat_acex_artillery_System";
         editorSubcategory = "EdSubcat_acex_artillery_Ammunition";
@@ -82,9 +82,9 @@ class CfgVehicles {
         displayName = "MACS M232 Charge Sleeve";
         author = ECSTRING(common,ACETeam);
         model=PATHTOF(macs_sleeve_m232_F.p3d);
-        icon="";
-        picture="";
-        
+        icon = "iconObject_1x1";
+        picture = "\A3\Weapons_F\Data\placeholder_co.paa";
+
         vehicleClass = "acex_artillery_System";
         editorCategory = "EdCat_acex_artillery_System";
         editorSubcategory = "EdSubcat_acex_artillery_Ammunition";
@@ -96,13 +96,16 @@ class CfgVehicles {
         displayName = "MACS M231 Supply Pallet";
         author = ECSTRING(common,ACETeam);
         model=PATHTOF(macs_pallet_m231_F.p3d);
-        
+
+        icon = "iconObject_1x1";
+        picture = "\A3\Weapons_F\Data\placeholder_co.paa";
+
         vehicleClass = "acex_artillery_System";
         editorCategory = "EdCat_acex_artillery_System";
         editorSubcategory = "EdSubcat_acex_artillery_Ammunition";
-        
+
         slingLoadCargoMemoryPoints[] = {"slingload_point_01","slingload_point_02","slingload_point_03","slingload_point_04"};
-        
+
         class AnimationSources {
             class open_01_base{
                 initPhase = 0;
@@ -114,21 +117,21 @@ class CfgVehicles {
             class open_04_base: open_01_base{};
             class open_05_base: open_01_base{};
             class open_06_base: open_01_base{};
-            
+
             class open_01 {
-                source = "open_01_base";
+                source = "user";
                 animPeriod = 0;
                 initPhase = 0;
                 minValue = 0;
                 maxValue = 1;
             };
-            class open_02: open_01 { source = "open_02_base"; };
-            class open_03: open_01 { source = "open_03_base"; };
-            class open_04: open_01 { source = "open_04_base"; };
-            class open_05: open_01 { source = "open_05_base"; };
-            class open_06: open_01 { source = "open_06_base"; };
+            class open_02: open_01 { source = "user"; };
+            class open_03: open_01 { source = "user"; };
+            class open_04: open_01 { source = "user"; };
+            class open_05: open_01 { source = "user"; };
+            class open_06: open_01 { source = "user"; };
         };
-        
+
         class ACE_Actions {
             class ACE_Open_01 {
                 displayName="Open Tube";
@@ -147,7 +150,7 @@ class CfgVehicles {
                 selection = "action_02";
             };
         };
-        
+
     };
     class ACE_MACS_M232_Pallet_F: ACE_MACS_M231_Pallet_F {
         XEH_ENABLED;
@@ -156,9 +159,9 @@ class CfgVehicles {
         displayName = "MACS M232 Supply Pallet";
         author = ECSTRING(common,ACETeam);
         model=PATHTOF(macs_pallet_m232_F.p3d);
-        icon="";
-        picture="";
-        
+        icon = "iconObject_1x1";
+        picture = "\A3\Weapons_F\Data\placeholder_co.paa";
+
         vehicleClass = "acex_artillery_System";
         editorCategory = "EdCat_acex_artillery_System";
         editorSubcategory = "EdSubcat_acex_artillery_Ammunition";

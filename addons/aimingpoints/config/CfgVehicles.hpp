@@ -47,7 +47,7 @@ class CfgVehicles {
                 maxValue = 2;
             };
             class light_mode {
-                source = "light_base";
+                source = "user";
                 animPeriod = 0;
                 initPhase = 0;
                 minValue = 0;
@@ -127,7 +127,7 @@ class CfgVehicles {
             };
             class collimator_illuminate {
                 displayName = "Collimator Back-light";
-                source = "illuminate";
+                source = "user";
                 animPeriod = 0.01;
                 minValue = 0;
                 maxValue = 2;
@@ -135,7 +135,7 @@ class CfgVehicles {
             };
             class collimator_size {
                 displayName = "Collimator Reticule Size";
-                source = "expand";
+                source = "user";
                 animPeriod = 1.0;
                 initPhase = 0;
                 minValue = 0;

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="ACEX_Artillery">
     <Package name="Artillery">
-
+        <Key ID="STR_acex_artillery_ammunition_MainAction">
+            <English>Ammunition</English>
+        </Key>
     </Package>
 </Project>
