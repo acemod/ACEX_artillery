@@ -3,5 +3,5 @@
 ADDON = false;
 
 PREP(operateHydraulics);
-
+PREP(detatchPart);
 ADDON = true;
