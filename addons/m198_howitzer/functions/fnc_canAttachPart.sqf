@@ -17,8 +17,6 @@
  */
 params ["_object","_unloader","_animations","_part"];
 
-hint format["Name: %1 Operator: %2 Phase: %3",_animationName, _operator, _animationPhase];
-
 private _boolArr = [];
 {
     private _inPhase = false;
@@ -31,9 +29,10 @@ private _boolArr = [];
         case (1): {_inPhase = _phase >= _phaseCondition};
         case (2): {_inPhase = _phase > _phaseCondition};
     };
-    if (_inPhase) then {_bool pushBack true};
+    //diag_log format["Anim: %1 Condition: %2  Operator: %3 Bool: %4", _animName, _phaseCondition, _operator,_inPhase ];
+    if (_inPhase) then {_boolArr pushBack true};
 } forEach _animations;
 
-if (count _boolArr == count _animations && !{false in _boolArr}) then {
-    exitWith {true};
-};
+if (count _boolArr == count _animations && !(false in _boolArr)) exitWith {true};
+
+false

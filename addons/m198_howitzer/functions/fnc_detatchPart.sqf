@@ -11,14 +11,16 @@
  * 3: Part <STRING>
  *
  * Return Value:
+ * None
  *
- *
+ * Example:
+ * [_target,_player,'hide_right_foot','ACE_M198_Foot_F'] call acex_artillery_m198_howitzer_fnc_detatchPart;
  * Public: Yes
  */
 #include "script_component.hpp"
 params ["_object","_unloader","_animation","_part"];
 
-_object animate [_animation, 1];
+_object animate [_animation, 1,true];
 
 //Make sure part is a classname
 private _partClass = if (_part isEqualType "") then {_part} else {typeOf _part};

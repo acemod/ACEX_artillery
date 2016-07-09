@@ -348,15 +348,15 @@ class CfgVehicles {
                 distance = 1.75;
                 //condition = "(_target animationPhase 'hide_left_foot' ==  1)";
                 condition = QUOTE([ARR_4(_target,_player,[['hide_left_foot',1,0]],'ACE_M198_Foot_F')] call FUNC(canAttachPart));
-                statement = "_target animate ['move_left_foot',1]; _target animate['rotate_left_foot',1]; _target animate['rotate_left_foot_2',1]; _target animate ['hide_left_foot',0];";
+                statement = "_target animate ['move_left_foot',1,true]; _target animate['rotate_left_foot',1,true]; _target animate['rotate_left_foot_2',1,true]; _target animate ['hide_left_foot',0];";
                 showDisabled = 0;
             };
             class ACE_Foot_Attach_R {
                 displayName = "Attach Foot";
                 selection = "pos_right_foot2";
                 distance = 1.75;
-                condition = "(_target animationPhase 'hide_right_foot' ==  1)";
-                statement = "_target animate ['move_right_foot',1]; _target animate ['hide_right_foot',0];";
+                condition = QUOTE([ARR_4(_target,_player,[['hide_right_foot',1,0]],'ACE_M198_Foot_F')] call FUNC(canAttachPart));
+                statement = "_target animate ['move_right_foot',1,true]; _target animate['rotate_right_foot',1,true]; _target animate['rotate_right_foot_2',1,true]; _target animate ['hide_right_foot',0];";
                 showDisabled = 0;
             };
         };
