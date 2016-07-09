@@ -17,6 +17,9 @@
  */
 params ["_object","_unloader","_animations","_part"];
 
+private _nearestPart = nearestObject [_unloader, _part];
+if ((isNull _nearestPart) || _unloader distance _loadCar > 5) exitWith {false};
+
 private _boolArr = [];
 {
     private _inPhase = false;

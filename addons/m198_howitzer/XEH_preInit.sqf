@@ -3,7 +3,9 @@
 ADDON = false;
 
 PREP(operateHydraulics);
-PREP(detatchPart);
+
 PREP(canAttachPart);
+PREP(attachPart);
+PREP(detatchPart);
 
 ADDON = true;
