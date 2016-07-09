@@ -331,7 +331,7 @@ class CfgVehicles {
                 selection = "pos_left_foot";
                 distance = 1.75;
                 condition = "(_target animationPhase 'hide_left_foot' <=  0) AND (_target animationPhase 'move_left_foot' <=  0)";
-                statement = "_target animate ['hide_left_foot',1]";
+                statement = QUOTE([ARR_4(_target,ACE_player,'hide_left_foot','ACE_M198_Foot_F')] call FUNC(detatchPart));
                 showDisabled = 0;
             };
             class ACE_Foot_Detach_R {
@@ -339,7 +339,7 @@ class CfgVehicles {
                 selection = "pos_right_foot";
                 distance = 1.75;
                 condition = "(_target animationPhase 'hide_right_foot' <=  0) AND (_target animationPhase 'move_right_foot' <=  0)";
-                statement = "_target animate ['hide_right_foot',1]";
+                statement = QUOTE([ARR_4(_target,_player,'hide_right_foot','ACE_M198_Foot_F')] call FUNC(detatchPart));
                 showDisabled = 0;
             };
             class ACE_Foot_Attach_L {
@@ -364,6 +364,14 @@ class CfgVehicles {
         displayName = "M198 Desert";
         hiddenSelections[] = {"camo1","camo2","camo3"};
         hiddenSelectionsTextures[] = {"\z\acex_artillery\addons\m198_howitzer\data\camo1_d_co.paa","\z\acex_artillery\addons\m198_howitzer\data\camo2_d_co.paa","\z\acex_artillery\addons\m198_howitzer\data\camo3_d_co.paa"};
+        class ACE_Actions: ACE_Actions {
+            class ACE_Foot_Detach_L: ACE_Foot_Detach_L {
+                statement = QUOTE([ARR_4(_target,ACE_player,'hide_left_foot','ACE_M198_Foot_Des_F')] call FUNC(detatchPart));
+            };
+            class ACE_Foot_Detach_R: ACE_Foot_Detach_R {
+                statement = QUOTE([ARR_4(_target,_player,'hide_right_foot','ACE_M198_Foot_Des_F')] call FUNC(detatchPart));
+            };
+        };
     };
     class ACE_M198_Foot_F: ACE_RepairItem_Base {
         scope = 2;
@@ -375,7 +383,7 @@ class CfgVehicles {
         ace_dragging_dragPosition[] = {0,1,0};
         ace_dragging_dragDirection = 0;
     };
-    class ACE_M198_Des_Foot_F: ACE_M198_Foot_F {
+    class ACE_M198_Foot_Des_F: ACE_M198_Foot_F {
         scope = 2;
         displayName = "M198 Howitzer Foot Desert";
         hiddenSelections[] = {"camo"};
