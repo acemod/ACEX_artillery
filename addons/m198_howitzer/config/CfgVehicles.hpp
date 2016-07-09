@@ -331,7 +331,7 @@ class CfgVehicles {
                 selection = "pos_left_foot";
                 distance = 1.75;
                 condition = "(_target animationPhase 'hide_left_foot' <=  0) AND (_target animationPhase 'move_left_foot' <=  0)";
-                statement = QUOTE([ARR_4(_target,ACE_player,'hide_left_foot','ACE_M198_Foot_F')] call FUNC(detatchPart));
+                statement = QUOTE([ARR_4(_target,_player,'hide_left_foot','ACE_M198_Foot_F')] call FUNC(detatchPart));
                 showDisabled = 0;
             };
             class ACE_Foot_Detach_R {
@@ -346,7 +346,8 @@ class CfgVehicles {
                 displayName = "Attach Foot";
                 selection = "pos_left_foot2";
                 distance = 1.75;
-                condition = "(_target animationPhase 'hide_left_foot' ==  1)";
+                //condition = "(_target animationPhase 'hide_left_foot' ==  1)";
+                condition = QUOTE([ARR_4(_target,_player,[['hide_left_foot',1,0]],'ACE_M198_Foot_F')] call FUNC(canAttachPart));
                 statement = "_target animate ['move_left_foot',1]; _target animate['rotate_left_foot',1]; _target animate['rotate_left_foot_2',1]; _target animate ['hide_left_foot',0];";
                 showDisabled = 0;
             };

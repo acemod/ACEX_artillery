@@ -4,5 +4,6 @@ ADDON = false;
 
 PREP(operateHydraulics);
 PREP(detatchPart);
+PREP(canAttachPart);
 
 ADDON = true;
