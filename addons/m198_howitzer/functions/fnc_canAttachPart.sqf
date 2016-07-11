@@ -15,13 +15,16 @@
  *
  * Public: Yes
  */
- /*
+
 params ["_object","_unloader","_animations","_part"];
 
+//Find the nearest compatible part
 private _nearestPart = nearestObject [_unloader, _part];
-hint format["Object ID: %1 Distance %2",_nearestPart, _unloader distance _nearestPart];
-//if ((isNull _nearestPart) || _unloader distance _nearestPart > 5) exitWith {false};
 
+//Check if the part is close enough and not null
+if ((isNull _nearestPart) || _unloader distance _nearestPart > 1) exitWith {false};
+
+//Check the state of each animation against the condition
 private _boolArr = [];
 {
     private _inPhase = false;
@@ -38,8 +41,7 @@ private _boolArr = [];
     if (_inPhase) then {_boolArr pushBack true};
 } forEach _animations;
 
+//If all animations are in the desired stage then return true
 if (count _boolArr == count _animations && !(false in _boolArr)) exitWith {true};
 
 false
-*/
-true

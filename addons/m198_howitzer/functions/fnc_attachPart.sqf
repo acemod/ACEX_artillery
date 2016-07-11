@@ -18,10 +18,16 @@
  * Public: Yes
  */
 #include "script_component.hpp"
-params ["_object","_unloader","_animation","_part"];
+params ["_object","_unloader","_animations","_part"];
 
-private _nearestPart = nearestObject [_object, _part];
+//Find the nearest compatible part
+private _nearestPart = nearestObject [_unloader, _part];
 
-deleteVehicle _nearestPart;
-
-_object animate [_animation, 0,true];
+//Only use the closest part
+if (!(isNull _nearestPart) && _unloader distance _nearestPart <= 1) then {
+    deleteVehicle _nearestPart;
+    {
+        _x params ["_animName","_animPhase"];
+        _object animate [_animName, _animPhase, true];
+    } foreach _animations
+};

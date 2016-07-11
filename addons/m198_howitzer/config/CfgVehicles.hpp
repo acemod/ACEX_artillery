@@ -347,18 +347,17 @@ class CfgVehicles {
                 selection = "pos_left_foot2";
                 distance = 1.75;
                 condition = QUOTE([ARR_4(_target,_player,[['hide_left_foot',1,0]],'ACE_M198_Foot_F')] call FUNC(canAttachPart));
-                statement = "_target animate ['move_left_foot',1,true]; _target animate['rotate_left_foot',1,true]; _target animate['rotate_left_foot_2',1,true]; _target animate ['hide_left_foot',0];";
+                statement = QUOTE([ARR_4(_target,_player,[['move_left_foot',1],['rotate_left_foot',1],['rotate_left_foot_2',1],['hide_left_foot',0]],'ACE_M198_Foot_F')] call FUNC(attachPart));
                 showDisabled = 0;
             };
             class ACE_Foot_Store_R {
                 displayName = "Store Foot";
                 selection = "pos_right_foot2";
                 distance = 1.75;
-                //condition = QUOTE([ARR_4(_target,_player,[['hide_right_foot',1,0]],'ACE_M198_Foot_F')] call FUNC(canAttachPart));
-                statement = "_target animate ['move_right_foot',1,true]; _target animate['rotate_right_foot',1,true]; _target animate['rotate_right_foot_2',1,true]; _target animate ['hide_right_foot',0];";
+                condition = QUOTE([ARR_4(_target,_player,[['hide_right_foot',1,0]],'ACE_M198_Foot_F')] call FUNC(canAttachPart));
+                statement = QUOTE([ARR_4(_target,_player,[['move_right_foot',1],['rotate_right_foot',1],['rotate_right_foot_2',1],['hide_right_foot',0]],'ACE_M198_Foot_F')] call FUNC(attachPart));
                 showDisabled = 0;
             };
-            /*
             class ACE_Foot_Attach_L {
                 displayName = "Attach Foot";
                 selection = "pos_left_foot";
@@ -375,14 +374,12 @@ class CfgVehicles {
                 statement = QUOTE([ARR_4(_target,_player,[['hide_left_foot',0]],'ACE_M198_Foot_F')] call FUNC(attachPart));
                 showDisabled = 0;
             };
-            */
         };
     };
     class ACE_M198_Des_F: ACE_M198_F {
         displayName = "M198 Desert";
         hiddenSelections[] = {"camo1","camo2","camo3"};
         hiddenSelectionsTextures[] = {"\z\acex_artillery\addons\m198_howitzer\data\camo1_d_co.paa","\z\acex_artillery\addons\m198_howitzer\data\camo2_d_co.paa","\z\acex_artillery\addons\m198_howitzer\data\camo3_d_co.paa"};
-        /*
         class ACE_Actions: ACE_Actions {
             class ACE_Foot_Detach_L: ACE_Foot_Detach_L {
                 statement = QUOTE([ARR_4(_target,ACE_player,'hide_left_foot','ACE_M198_Foot_Des_F')] call FUNC(detatchPart));
@@ -405,7 +402,6 @@ class CfgVehicles {
                 statement = QUOTE([ARR_4(_target,_player,[['hide_left_foot',0]],'ACE_M198_Foot_Des_F')] call FUNC(attachPart));
             };
         };
-        */
     };
     class ACE_M198_Foot_F: ACE_RepairItem_Base {
         scope = 2;
