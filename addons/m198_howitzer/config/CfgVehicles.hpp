@@ -31,7 +31,8 @@ class CfgVehicles {
         model = PATHTOF(M198_Howitzer_F.p3d);
 
         slingLoadCargoMemoryPoints[] = {"slingload_point_01","slingload_point_02","slingload_point_03","slingload_point_04"};
-
+        ace_dragging_canDrag = 0;
+        ace_dragging_canCarry = 0;
         class Turrets: Turrets
         {
             class MainTurret: MainTurret
@@ -351,20 +352,52 @@ class CfgVehicles {
                 condition = "_target animationPhase 'rear_shackle_left_rotate' < 0.5";
                 statement = "_target animate ['rear_shackle_left_rotate',1]";
             };
-            class ACE_Shackle_Rear_Left_Lower: ACE_Shackle_Front_Lower {
+            class ACE_Shackle_Rear_L_Lower: ACE_Shackle_Front_Lower {
                 selection = "rear_shackle_left_axis";
                 condition = "_target animationPhase 'rear_shackle_left_rotate' > 0.5";
                 statement = "_target animate ['rear_shackle_left_rotate',0]";
             };
-            class ACE_Shackle_Rear_Right_Raise: ACE_Shackle_Front_Raise {
+            class ACE_Shackle_Rear_R_Raise: ACE_Shackle_Front_Raise {
                 selection = "rear_shackle_right_axis";
                 condition = "_target animationPhase 'rear_shackle_right_rotate' < 0.5";
                 statement = "_target animate ['rear_shackle_right_rotate',1]";
             };
-            class ACE_Shackle_Rear_Right_Lower: ACE_Shackle_Front_Lower {
+            class ACE_Shackle_Rear_R_Lower: ACE_Shackle_Front_Lower {
                 selection = "rear_shackle_right_axis";
                 condition = "_target animationPhase 'rear_shackle_right_rotate' > 0.5";
                 statement = "_target animate ['rear_shackle_right_rotate',0]";
+            };
+            class ACE_Jack_Handle_Detach_L {
+                displayName = "Detach Jack";
+                selection = "pos_jack_handle_left";
+                distance = 1.75;
+                condition = QUOTE([ARR_2(_target,[['hide_jack_handle_left',0,0]])] call FUNC(canDetachPart));
+                statement = QUOTE([ARR_4(_target,_player,[['hide_jack_handle_left',1]],'ACE_M198_Jack_Handle_F')] call FUNC(detachPart));
+                showDisabled = 0;
+            };
+            class ACE_Jack_Handle_Attach_L {
+                displayName = "Attach Jack";
+                selection = "pos_jack_handle_left";
+                distance = 1.75;
+                condition = QUOTE([ARR_4(_target,_player,[['hide_jack_handle_left',1,0]],'ACE_M198_Jack_Handle_F')] call FUNC(canAttachPart));
+                statement = QUOTE([ARR_4(_target,_player,[['hide_jack_handle_left',0]],'ACE_M198_Jack_Handle_F')] call FUNC(attachPart));
+                showDisabled = 0;
+            };
+            class ACE_Jack_Handle_Detach_R {
+                displayName = "Detach Jack";
+                selection = "pos_jack_handle_right";
+                distance = 1.75;
+                condition = QUOTE([ARR_2(_target,[['hide_jack_handle_right',0,0]])] call FUNC(canDetachPart));
+                statement = QUOTE([ARR_4(_target,_player,[['hide_jack_handle_right',1]],'ACE_M198_Jack_Handle_F')] call FUNC(detachPart));
+                showDisabled = 0;
+            };
+            class ACE_Jack_Handle_Attach_R {
+                displayName = "Attach Jack";
+                selection = "pos_jack_handle_right";
+                distance = 1.75;
+                condition = QUOTE([ARR_4(_target,_player,[['hide_jack_handle_right',1,0]],'ACE_M198_Jack_Handle_F')] call FUNC(canAttachPart));
+                statement = QUOTE([ARR_4(_target,_player,[['hide_jack_handle_right',0]],'ACE_M198_Jack_Handle_F')] call FUNC(attachPart));
+                showDisabled = 0;
             };
             class ACE_Foot_Detach_L {
                 displayName = "Detach Foot";
@@ -508,6 +541,10 @@ class CfgVehicles {
         icon = PATHTOF(data\ui\map_loadingtray_ca.paa);
         picture = PATHTOF(data\ui\loadingtray_equip_ca.paa);
         vehicleClass = "Static";
+
+        ace_dragging_canCarry = 1;
+        ace_dragging_carryPosition[] = {0,1.3,0};
+        ace_dragging_carryDirection = 0;
     };
     class ACE_155_LoadingTray_F: ThingX {
         scope = 2;
