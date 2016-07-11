@@ -24,10 +24,10 @@ params ["_object","_unloader","_animations","_part"];
 private _nearestPart = nearestObject [_unloader, _part];
 
 //Only use the closest part
-if (!(isNull _nearestPart) && _unloader distance _nearestPart <= 1) then {
+if (!(isNull _nearestPart) && _unloader distance _nearestPart <= 2) then {
     deleteVehicle _nearestPart;
     {
         _x params ["_animName","_animPhase"];
         _object animate [_animName, _animPhase, true];
-    } foreach _animations
+    } foreach _animations;
 };

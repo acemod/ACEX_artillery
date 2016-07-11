@@ -2,13 +2,11 @@
  * Author: Grey-Soldierman
  *
  * Description:
- * Checks whether a part can be attached.It does this by checking the state of multiple animations and if the required object is close by
+ * Checks whether a part can be detached.It does this by checking the state of multiple animations
  *
  * Argument:
  * 0: Any object <OBJECT>
- * 1: Player <OBJECT>
- * 2: Animations <ARRAY>
- * 3: Part <STRING>
+ * 1: Animations <ARRAY>
  *
  * Return Value:
  * canAttachPart <BOOLEAN>
@@ -16,13 +14,8 @@
  * Public: Yes
  */
 
-params ["_object","_unloader","_animations","_part"];
+params ["_object","_animations"];
 
-//Find the nearest compatible part
-private _nearestPart = nearestObject [_unloader, _part];
-
-//Exit if nearest part is null or too far from the player
-if ((isNull _nearestPart) || _unloader distance _nearestPart > 2) exitWith {false};
 
 //Check the state of each animation against the condition
 private _boolArr = [];

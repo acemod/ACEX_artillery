@@ -18,9 +18,12 @@
  * Public: Yes
  */
 #include "script_component.hpp"
-params ["_object","_unloader","_animation","_part"];
-
-_object animate [_animation, 1,true];
+params ["_object","_unloader","_animations","_part"];
+//Perform all animations
+{
+    _x params ["_animName","_animPhase"];
+    _object animate [_animName, _animPhase, true];
+} foreach _animations;
 
 //Make sure part is a classname
 private _partClass = if (_part isEqualType "") then {_part} else {typeOf _part};

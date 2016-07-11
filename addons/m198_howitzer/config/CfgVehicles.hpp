@@ -330,32 +330,8 @@ class CfgVehicles {
                 displayName = "Detach Foot";
                 selection = "pos_left_foot";
                 distance = 1.75;
-                condition = "(_target animationPhase 'hide_left_foot' <=  0) AND (_target animationPhase 'move_left_foot' <=  0)";
-                statement = QUOTE([ARR_4(_target,_player,'hide_left_foot','ACE_M198_Foot_F')] call FUNC(detatchPart));
-                showDisabled = 0;
-            };
-            class ACE_Foot_Detach_R {
-                displayName = "Detach Foot";
-                selection = "pos_right_foot";
-                distance = 1.75;
-                condition = "(_target animationPhase 'hide_right_foot' <=  0) AND (_target animationPhase 'move_right_foot' <=  0)";
-                statement = QUOTE([ARR_4(_target,_player,'hide_right_foot','ACE_M198_Foot_F')] call FUNC(detatchPart));
-                showDisabled = 0;
-            };
-            class ACE_Foot_Store_L {
-                displayName = "Store Foot";
-                selection = "pos_left_foot2";
-                distance = 1.75;
-                condition = QUOTE([ARR_4(_target,_player,[['hide_left_foot',1,0]],'ACE_M198_Foot_F')] call FUNC(canAttachPart));
-                statement = QUOTE([ARR_4(_target,_player,[['move_left_foot',1],['rotate_left_foot',1],['rotate_left_foot_2',1],['hide_left_foot',0]],'ACE_M198_Foot_F')] call FUNC(attachPart));
-                showDisabled = 0;
-            };
-            class ACE_Foot_Store_R {
-                displayName = "Store Foot";
-                selection = "pos_right_foot2";
-                distance = 1.75;
-                condition = QUOTE([ARR_4(_target,_player,[['hide_right_foot',1,0]],'ACE_M198_Foot_F')] call FUNC(canAttachPart));
-                statement = QUOTE([ARR_4(_target,_player,[['move_right_foot',1],['rotate_right_foot',1],['rotate_right_foot_2',1],['hide_right_foot',0]],'ACE_M198_Foot_F')] call FUNC(attachPart));
+                condition = QUOTE([ARR_2(_target,[['hide_left_foot',0,-1],['move_left_foot',0,-1]])] call FUNC(canDetachPart));
+                statement = QUOTE([ARR_4(_target,_player,[['hide_left_foot',1]],'ACE_M198_Foot_F')] call FUNC(detachPart));
                 showDisabled = 0;
             };
             class ACE_Foot_Attach_L {
@@ -366,12 +342,52 @@ class CfgVehicles {
                 statement = QUOTE([ARR_4(_target,_player,[['hide_left_foot',0]],'ACE_M198_Foot_F')] call FUNC(attachPart));
                 showDisabled = 0;
             };
+            class ACE_Foot_Store_L {
+                displayName = "Store Foot";
+                selection = "pos_left_foot2";
+                distance = 1.75;
+                condition = QUOTE([ARR_4(_target,_player,[['hide_left_foot',1,0]],'ACE_M198_Foot_F')] call FUNC(canAttachPart));
+                statement = QUOTE([ARR_4(_target,_player,[['move_left_foot',1],['rotate_left_foot',1],['rotate_left_foot_2',1],['hide_left_foot',0]],'ACE_M198_Foot_F')] call FUNC(attachPart));
+                showDisabled = 0;
+            };
+            class ACE_Foot_UnStore_L {
+                displayName = "Detach Foot";
+                selection = "pos_left_foot2";
+                distance = 1.75;
+                condition = QUOTE([ARR_2(_target,[['hide_left_foot',0,0]])] call FUNC(canDetachPart));
+                statement = QUOTE([ARR_4(_target,_player,[['move_left_foot',0],['rotate_left_foot',0],['rotate_left_foot_2',0],['hide_left_foot',1]],'ACE_M198_Foot_F')] call FUNC(detachPart));
+                showDisabled = 0;
+            };
+            class ACE_Foot_Detach_R {
+                displayName = "Detach Foot";
+                selection = "pos_right_foot";
+                distance = 1.75;
+                condition = QUOTE([ARR_2(_target,[['hide_right_foot',0,-1],['move_right_foot',0,-1]])] call FUNC(canDetachPart));
+                statement = QUOTE([ARR_4(_target,_player,[['hide_right_foot',1]],'ACE_M198_Foot_F')] call FUNC(detachPart));
+                showDisabled = 0;
+            };
             class ACE_Foot_Attach_R {
                 displayName = "Attach Foot";
                 selection = "pos_right_foot";
                 distance = 1.75;
                 condition = QUOTE([ARR_4(_target,_player,[['hide_right_foot',1,0]],'ACE_M198_Foot_F')] call FUNC(canAttachPart));
-                statement = QUOTE([ARR_4(_target,_player,[['hide_left_foot',0]],'ACE_M198_Foot_F')] call FUNC(attachPart));
+                statement = QUOTE([ARR_4(_target,_player,[['hide_right_foot',0]],'ACE_M198_Foot_F')] call FUNC(attachPart));
+                showDisabled = 0;
+            };
+            class ACE_Foot_Store_R {
+                displayName = "Store Foot";
+                selection = "pos_right_foot2";
+                distance = 1.75;
+                condition = QUOTE([ARR_4(_target,_player,[['hide_right_foot',1,0]],'ACE_M198_Foot_F')] call FUNC(canAttachPart));
+                statement = QUOTE([ARR_4(_target,_player,[['move_right_foot',1],['rotate_right_foot',1],['rotate_right_foot_2',1],['hide_right_foot',0]],'ACE_M198_Foot_F')] call FUNC(attachPart));
+                showDisabled = 0;
+            };
+            class ACE_Foot_UnStore_R {
+                displayName = "Detach Foot";
+                selection = "pos_right_foot2";
+                distance = 1.75;
+                condition = QUOTE([ARR_2(_target,[['hide_right_foot',0,0]])] call FUNC(canDetachPart));
+                statement = QUOTE([ARR_4(_target,_player,[['move_right_foot',0],['rotate_right_foot',0],['rotate_right_foot_2',0],['hide_right_foot',1]],'ACE_M198_Foot_F')] call FUNC(detachPart));
                 showDisabled = 0;
             };
         };
@@ -382,10 +398,10 @@ class CfgVehicles {
         hiddenSelectionsTextures[] = {"\z\acex_artillery\addons\m198_howitzer\data\camo1_d_co.paa","\z\acex_artillery\addons\m198_howitzer\data\camo2_d_co.paa","\z\acex_artillery\addons\m198_howitzer\data\camo3_d_co.paa"};
         class ACE_Actions: ACE_Actions {
             class ACE_Foot_Detach_L: ACE_Foot_Detach_L {
-                statement = QUOTE([ARR_4(_target,ACE_player,'hide_left_foot','ACE_M198_Foot_Des_F')] call FUNC(detatchPart));
+                statement = QUOTE([ARR_4(_target,ACE_player,'hide_left_foot','ACE_M198_Foot_Des_F')] call FUNC(detachPart));
             };
             class ACE_Foot_Detach_R: ACE_Foot_Detach_R {
-                statement = QUOTE([ARR_4(_target,_player,'hide_right_foot','ACE_M198_Foot_Des_F')] call FUNC(detatchPart));
+                statement = QUOTE([ARR_4(_target,_player,'hide_right_foot','ACE_M198_Foot_Des_F')] call FUNC(detachPart));
             };
             class ACE_Foot_Store_L: ACE_Foot_Store_L {
                 condition = QUOTE([ARR_4(_target,_player,[['hide_left_foot',1,0]],'ACE_M198_Foot_Des_F')] call FUNC(canAttachPart));
