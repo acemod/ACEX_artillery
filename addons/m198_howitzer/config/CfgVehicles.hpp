@@ -323,8 +323,48 @@ class CfgVehicles {
                     statement = "_target animate ['deploy_support',0]";
                 };
             };
-            class ACE_Support_R: ACE_Support_L{
-                selection = "pos_support_r";
+            class ACE_Shackle_Front_Raise {
+                displayName = "Raise Shackle";
+                selection = "front_shackle_axis";
+                distance = 1.5;
+                condition = "_target animationPhase 'front_shackles_rotate' < 0.5";
+                statement = "_target animate ['front_shackles_rotate',1]";
+                showDisabled = 0;
+            };
+            class ACE_Shackle_Front_Lower: ACE_Shackle_Front_Raise {
+                displayName = "Lower Shackle";
+                condition = "_target animationPhase 'front_shackles_rotate' > 0.5";
+                statement = "_target animate ['front_shackles_rotate',0]";
+            };
+            class ACE_Shackle_Middle_Raise: ACE_Shackle_Front_Raise {
+                selection = "mid_shackle_axis";
+                condition = "_target animationPhase 'mid_shackles_rotate' < 0.5";
+                statement = "_target animate ['mid_shackles_rotate',1]";
+            };
+            class ACE_Shackle_Middle_Lower: ACE_Shackle_Front_Lower {
+                selection = "mid_shackle_axis";
+                condition = "_target animationPhase 'mid_shackles_rotate' > 0.5";
+                statement = "_target animate ['mid_shackles_rotate',0]";
+            };
+            class ACE_Shackle_Rear_Left_Raise: ACE_Shackle_Front_Raise {
+                selection = "rear_shackle_left_axis";
+                condition = "_target animationPhase 'rear_shackle_left_rotate' < 0.5";
+                statement = "_target animate ['rear_shackle_left_rotate',1]";
+            };
+            class ACE_Shackle_Rear_Left_Lower: ACE_Shackle_Front_Lower {
+                selection = "rear_shackle_left_axis";
+                condition = "_target animationPhase 'rear_shackle_left_rotate' > 0.5";
+                statement = "_target animate ['rear_shackle_left_rotate',0]";
+            };
+            class ACE_Shackle_Rear_Right_Raise: ACE_Shackle_Front_Raise {
+                selection = "rear_shackle_right_axis";
+                condition = "_target animationPhase 'rear_shackle_right_rotate' < 0.5";
+                statement = "_target animate ['rear_shackle_right_rotate',1]";
+            };
+            class ACE_Shackle_Rear_Right_Lower: ACE_Shackle_Front_Lower {
+                selection = "rear_shackle_right_axis";
+                condition = "_target animationPhase 'rear_shackle_right_rotate' > 0.5";
+                statement = "_target animate ['rear_shackle_right_rotate',0]";
             };
             class ACE_Foot_Detach_L {
                 displayName = "Detach Foot";
@@ -354,7 +394,7 @@ class CfgVehicles {
                 displayName = "Detach Foot";
                 selection = "pos_left_foot2";
                 distance = 1.75;
-                condition = QUOTE([ARR_2(_target,[['hide_left_foot',0,0]])] call FUNC(canDetachPart));
+                condition = QUOTE([ARR_2(_target,[['hide_left_foot',0,0],['move_left_foot',1,0]])] call FUNC(canDetachPart));
                 statement = QUOTE([ARR_4(_target,_player,[['move_left_foot',0],['rotate_left_foot',0],['rotate_left_foot_2',0],['hide_left_foot',1]],'ACE_M198_Foot_F')] call FUNC(detachPart));
                 showDisabled = 0;
             };
@@ -386,7 +426,7 @@ class CfgVehicles {
                 displayName = "Detach Foot";
                 selection = "pos_right_foot2";
                 distance = 1.75;
-                condition = QUOTE([ARR_2(_target,[['hide_right_foot',0,0]])] call FUNC(canDetachPart));
+                condition = QUOTE([ARR_2(_target,[['hide_right_foot',0,0],['move_right_foot',1,0]])] call FUNC(canDetachPart));
                 statement = QUOTE([ARR_4(_target,_player,[['move_right_foot',0],['rotate_right_foot',0],['rotate_right_foot_2',0],['hide_right_foot',1]],'ACE_M198_Foot_F')] call FUNC(detachPart));
                 showDisabled = 0;
             };
