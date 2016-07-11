@@ -15,10 +15,12 @@
  *
  * Public: Yes
  */
+ /*
 params ["_object","_unloader","_animations","_part"];
 
 private _nearestPart = nearestObject [_unloader, _part];
-if ((isNull _nearestPart) || _unloader distance _loadCar > 5) exitWith {false};
+hint format["Object ID: %1 Distance %2",_nearestPart, _unloader distance _nearestPart];
+//if ((isNull _nearestPart) || _unloader distance _nearestPart > 5) exitWith {false};
 
 private _boolArr = [];
 {
@@ -39,3 +41,5 @@ private _boolArr = [];
 if (count _boolArr == count _animations && !(false in _boolArr)) exitWith {true};
 
 false
+*/
+true
