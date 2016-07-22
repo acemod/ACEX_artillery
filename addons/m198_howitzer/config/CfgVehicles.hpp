@@ -495,7 +495,7 @@ class CfgVehicles {
                 condition = QUOTE([ARR_4(_target,_player,[['hide_right_foot',1,0]],'ACE_M198_Foot_Des_F')] call FUNC(canAttachPart));
                 statement = QUOTE([ARR_4(_target,_player,[['move_right_foot',1],['rotate_right_foot',1],['rotate_right_foot_2',1],['hide_right_foot',0]],'ACE_M198_Foot_Des_F')] call FUNC(attachPart));
             };
-            class ACE_Foot_UnStore_R {
+            class ACE_Foot_UnStore_R: ACE_Foot_UnStore_R {
                 statement = QUOTE([ARR_4(_target,_player,[['move_right_foot',0],['rotate_right_foot',0],['rotate_right_foot_2',0],['hide_right_foot',1]],'ACE_M198_Foot_Des_F')] call FUNC(detachPart));
             };
         };
